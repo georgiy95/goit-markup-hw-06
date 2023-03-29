@@ -484,19 +484,17 @@
             <p class="ftr-sbscrb-frm">Subscribe</p>
             <form class="modal-form">
               <label class="footer-subscribe-label">
-                <span class="span-form-wrapper">
-                  <input
-                    type="email"
-                    name="user_email"
-                    class="spn-frm-wrppr"
-                    placeholder="E-mail"
-                  />
-                </span>
-
+                <input
+                  type="text"
+                  name="user_email"
+                  class="spn-frm-wrppr"
+                  placeholder="E-mail"
+                  required
+                />
                 <button type="submit" class="button-form-submit">
                   Subscribe
                   <svg width="24" height="20" class="footer-form-icon">
-                    <use href="./images/galka.svg#icon-Frame-3"></use>
+                    <use href="./images/icon-Frame-3.svg#icon-icon-send"></use>
                   </svg>
                 </button>
               </label>
@@ -580,8 +578,6 @@
             type="checkbox"
             name="user_policy"
             class="modal-form-chek"
-            class="hidden"
-            class="hidden"
             hidden
           />
           <label for="user-policy" class="modal-form-chek-desc"

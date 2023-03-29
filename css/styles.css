@@ -541,6 +541,11 @@ ul {
 
 .footer-subscribe-label {
   display: flex;
+  column-gap: 24px;
+}
+
+.modal-form {
+  display: flex;
 }
 
 .footer-subscribe-form {
@@ -555,12 +560,11 @@ ul {
 
 .button-form-submit {
   display: flex;
-  margin-left: 24px;
-  min-width: 156px;
+
   height: 40px;
   align-self: center;
   align-items: center;
-  padding: 16px 32px;
+  padding: 8px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -583,7 +587,7 @@ ul {
 .spn-frm-wrppr {
   outline: none;
   position: relative;
-  min-width: 264px;
+  width: 264px;
   height: 40px;
   padding: 8px 16px;
   font-size: 12px;
@@ -593,6 +597,10 @@ ul {
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--hero-background-color);
+}
+
+.spn-frm-wrppr::placeholder {
+  color: var(--white-color);
 }
 
 /* ------------------------------------------------------------------------------модальне вікно -------------------------------------*/
@@ -757,8 +765,7 @@ ul {
 }
 
 .modal-form-chek:focus + .modal-form-chek-desc::before {
-  background-color: var(--pressed-state-color);
-  outline: 2px solid rgba (0, 0, 255, 0.5);
+  outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
 .modal-form-chek-desc {
