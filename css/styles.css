@@ -529,7 +529,6 @@ ul {
   line-height: 1.5;
   margin-top: 16px;
 }
-
 /* <!------------------------------------------------------- footer-subscribe-form ---------------------------------------------> */
 .ftr-sbscrb-frm {
   font-weight: 500;
@@ -538,19 +537,12 @@ ul {
   margin-bottom: 16px;
   color: var(--white-color);
 }
-
-.footer-subscribe-label {
+.mdl-frm {
   display: flex;
-  column-gap: 24px;
-}
-
-.modal-form {
-  display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-form {
-  display: flex;
-  flex-direction: column;
   margin-left: 80px;
 }
 
@@ -560,7 +552,6 @@ ul {
 
 .button-form-submit {
   display: flex;
-
   height: 40px;
   align-self: center;
   align-items: center;
@@ -576,7 +567,7 @@ ul {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   fill: var(--white-color);
-  transition: background-color var(--transition-var);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-form-submit:hover,
@@ -586,7 +577,6 @@ ul {
 
 .spn-frm-wrppr {
   outline: none;
-  position: relative;
   width: 264px;
   height: 40px;
   padding: 8px 16px;
@@ -598,7 +588,6 @@ ul {
   color: var(--white-color);
   background-color: var(--hero-background-color);
 }
-
 .spn-frm-wrppr::placeholder {
   color: var(--white-color);
 }
@@ -632,7 +621,6 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   min-width: 408px;
   padding: 72px 24px 24px 24px;
-  min-height: 576px;
   background-color: var(--modal-color);
 }
 
@@ -814,6 +802,10 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.privacy-policy {
+  color: var(--primary-brand-color);
 }
 
 /* -----------------------------------------------------------------------------------Studio Portfolio -------------------------------------------------*/
